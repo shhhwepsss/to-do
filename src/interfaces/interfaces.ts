@@ -5,8 +5,10 @@ export interface IAction{
 
 export interface ITask {
     title:string
+    id: number
+    description: string
 }
 
 export interface IState {
-    tasks: Array<ITask>
+    allTasks: Array<ITask>
 }

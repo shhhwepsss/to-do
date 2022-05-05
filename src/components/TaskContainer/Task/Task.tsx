@@ -1,8 +1,12 @@
 import React from 'react'
+import { ITask } from '../../../interfaces/interfaces'
+import "./Task.css"
 
-function Task() {
+function Task({title, id, description}: ITask ) {
   return (
-    <div>Task</div>
+    <div className='task'>
+      <h2 className="task__title">{title}</h2>
+    </div>
   )
 }
 

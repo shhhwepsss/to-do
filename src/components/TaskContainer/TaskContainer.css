@@ -1,4 +1,6 @@
 .task-container{
+    display: flex;
+    flex-direction: column;
     width: 33%;
     min-height: 50px;
     max-height: 500px;
