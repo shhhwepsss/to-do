@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.dcbe2433.css",
+    "main.js": "/react-gh-pages/static/js/main.c7989f77.js",
+    "static/media/nightSky.png": "/react-gh-pages/static/media/nightSky.45fd284fa5d0d950e5a7.png",
+    "static/media/closeButton.svg": "/react-gh-pages/static/media/closeButton.0207253d348248ac0b8b.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.dcbe2433.css.map": "/react-gh-pages/static/css/main.dcbe2433.css.map",
+    "main.c7989f77.js.map": "/react-gh-pages/static/js/main.c7989f77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcbe2433.css",
+    "static/js/main.c7989f77.js"
+  ]
+}
