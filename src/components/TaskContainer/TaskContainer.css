@@ -1,0 +1,35 @@
+.task-container{
+    width: 33%;
+    min-height: 50px;
+    max-height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+}
+.task-container::-webkit-scrollbar {
+    width: 15px;
+}
+
+.task-container::-webkit-scrollbar-track {
+    background-color: rgb(151, 131, 226);
+    border-radius: 100px;
+}
+.task-container::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 199, 174);
+    border-radius: 100px;
+    margin: 0 1px ;
+}
+.task-container__title{
+    color: white;
+    text-align: center;
+    font-weight: 30px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+@media (max-width:900px) {
+    .task-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
