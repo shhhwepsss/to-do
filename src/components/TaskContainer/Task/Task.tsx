@@ -5,7 +5,7 @@ import "./Task.css"
 function Task({title, id, description}: ITask ) {
   return (
     <div className='task'>
-      <h2 className="task__title">{title}</h2>
+      <p className="task__title">{title}</p>
     </div>
   )
 }

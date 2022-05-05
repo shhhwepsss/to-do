@@ -6,7 +6,7 @@ export interface IAction{
 export interface ITask {
     title:string
     id: number
-    description: string
+    description?: string
 }
 
 export interface IState {

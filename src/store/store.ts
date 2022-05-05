@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 const ADD_TASK = "ADD_TASK"
 
 const initialState:IState = {
-    allTasks: [{title: "asdlkf", id: 1, description: "Не важно что тут написано"}]
+    allTasks: [{title: "asdlkwheofasihoi;asdg lnkhadsg", id: 1, description: "Не важно что тут написано"}]
 }
 
 function reducer(state = initialState, action: IAction){
@@ -12,7 +12,7 @@ function reducer(state = initialState, action: IAction){
             const newTasks:Array<ITask> = [...state.allTasks, action.task]
             return {
                 ...state,
-                tasks: newTasks
+                allTasks: newTasks
             }
     }
     return state
