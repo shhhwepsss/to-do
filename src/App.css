@@ -33,7 +33,7 @@
     background-color: red;
 }
 
-.modale-window__button{
+.modale-window__close-button{
     background-image: url("./images/closeButton.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +42,37 @@
     position: absolute;
     right: 5px;
     top: 5px;
+}
+
+.modal-window__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+
+.modal-window__inputs-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 100px auto;
+}
+.modalWindow__title-input{ 
+    height: 40px;
+    margin: 20px 0 0 0;
+}
+.modalWindow__textarea{
+    margin: 20px 0 0 0 ;
+    font-size: large;
+}
+
+.modal-window__add-task-button{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 150px;
+    height: 30px;
 }
 
 @media (max-width:1220px) {
