@@ -27,11 +27,17 @@ function App() {
         <TaskContainer title={"Выполненные задачи"} backgroundColor={"orange"} />
       </div>
       <div className="app__button-flex-container">
-          <button onClick={addTask}>Добавить задание на сегодня</button>
-          <button >Посмотреть все задания</button>
+        <button onClick={addTask}>Добавить задание на сегодня</button>
+        <button >Посмотреть все задания</button>
       </div>
       <div ref={modalWindow} className="modale-window app__modal-window non-active">
-        <button className="modale-window__button" onClick={() => windowApi.closeWindow()}></button>
+        <button className="modale-window__close-button" onClick={() => windowApi.closeWindow()}></button>
+        <div className="modal-window__inputs-container">
+          <h2 className="modal-window__title">Новое задание</h2>
+          <input placeholder="Название задачи" type="text" className="modalWindow__title-input" />
+          <textarea placeholder="Описание задачи" name="" id="" cols={30} rows={10} className="modalWindow__textarea"></textarea>
+        </div>
+        <button className="modal-window__add-task-button">Добавить задачу</button>
       </div>
     </div>
   );
