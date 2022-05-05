@@ -1,16 +1,20 @@
 
+import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./App.css"
 import TaskContainer from './components/TaskContainer/TaskContainer';
+import { modalWindowHelper } from "./helpers/modalWindowHelper";
 
 function App() {
-  const dispatch = useDispatch()
-  function addTask() {
-    dispatch({ type: "ADD_TASK", task: { title: "Lox" } })
-  }
+  const modalWindow = useRef<HTMLDivElement | null>(null)
   const store = useSelector(store => store)
-  console.log(store);
+  const dispatch = useDispatch()
+  const windowApi = new modalWindowHelper(modalWindow)
+
+  function addTask() {
+    windowApi.openWindow()
+  }
 
   return (
     <div className="app">
@@ -25,6 +29,9 @@ function App() {
       <div className="app__button-flex-container">
           <button onClick={addTask}>Добавить задание на сегодня</button>
           <button >Посмотреть все задания</button>
+      </div>
+      <div ref={modalWindow} className="modale-window app__modal-window non-active">
+        <button className="modale-window__button" onClick={() => windowApi.closeWindow()}></button>
       </div>
     </div>
   );
