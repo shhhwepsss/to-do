@@ -35,7 +35,7 @@ function App() {
         <div className="modal-window__inputs-container">
           <h2 className="modal-window__title">Новое задание</h2>
           <input placeholder="Название задачи" type="text" className="modalWindow__title-input" />
-          <textarea placeholder="Описание задачи" name="" id="" cols={30} rows={10} className="modalWindow__textarea"></textarea>
+          <textarea placeholder="Описание задачи" name="" id="" cols={30} className="modalWindow__textarea"></textarea>
         </div>
         <button className="modal-window__add-task-button">Добавить задачу</button>
       </div>
